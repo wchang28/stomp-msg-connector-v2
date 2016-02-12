@@ -1,0 +1,21 @@
+{
+  "name": "stomp-msg-connector-v2",
+  "description": "STOMP Message Connector v2",
+  "version": "2.0.0",
+  "author": {
+    "name": "Wen Chang",
+    "email": "wchang28@hotmail.com"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wchang28/stomp-msg-connector-v2.git"
+  },
+  "dependencies": {
+    "node-uuid": "^1.4.7",
+    "stomp_msg_broker": "git+https://github.com/wchang28/stomp_msg_broker.git",
+    "stompjs2": "git+https://github.com/wchang28/stompjs2.git"
+  }
+}
