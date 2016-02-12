@@ -20,13 +20,22 @@
 		,"debug": false
 		,"processors":
 		{
-			"my_queue_processor":
+			"/queue/my_queue":
 			{
-				"incoming": "/queue/my_queue"
-				,"subscribe_headers": {"ack": "client"}
+				"subscribe_headers": {"ack": "client"}
 				,"autoAckByClient": true/false (default to true)
 				,"handler": "C:/my_projects/my_queue"
 				,"handler_key": "my_handler_key"
+			}
+		}
+		,"transactions":
+		{
+			"myTx":
+			{
+				"outgoing": "/topic/sf_tx_request"
+				,"incoming": "/topic/sf_tx_response"
+				,"subscribe_headers": {"ack": "client"}
+				,"autoAckByClient": true/false (default to true)
 			}
 		}
 	}
